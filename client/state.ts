@@ -1,6 +1,6 @@
 import { rtdb } from "./rtdb"
 import map from "lodash/map"
-const API_BASE_URL = "https://newchatrooms.herokuapp.com/"
+const API_BASE_URL = "https://newchatrooms.herokuapp.com"
 
 const state = {
     data: {
