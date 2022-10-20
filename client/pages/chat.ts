@@ -16,9 +16,8 @@ export class ChatMessage extends HTMLElement {
         this.render();
     }
     scrollDown() {
-        const scrollDiv = document.querySelector(".messages")
+        const scrollDiv = document.getElementById("scrollDiv")
         if (scrollDiv) {
-
             scrollDiv.scrollTop = scrollDiv.scrollHeight
         }
     }
@@ -32,12 +31,6 @@ export class ChatMessage extends HTMLElement {
             state.pushMessage(input as any)
             inputEl.value = ""
         })
-        //    const form = this.querySelector(".submit-message")
-        //    form?.addEventListener("submit", (e) => {
-        //        e.preventDefault()
-        //        const target = e.target as any
-        //        state.pushMessage(target["new-message"].value)
-        //    })
     }
 
     messages: Messages[] = [];
@@ -57,6 +50,7 @@ export class ChatMessage extends HTMLElement {
                   <h2 class="codeRoom">room: ${habitacion}</h2>
                    <div class="messages" id="scrollDiv">
                     ${bubbles.join("")}
+              
                   </div>
               <form class="form-container"
                 <div class="submit-message">
@@ -153,7 +147,6 @@ export class ChatMessage extends HTMLElement {
         }
         `
         this.appendChild(style)
-        this.scrollDown()
         this.addListeners()
 
         // AUTORES
@@ -172,6 +165,7 @@ export class ChatMessage extends HTMLElement {
                 res.classList.add("me-received")
             }
         })
+        this.scrollDown()
     }
 }
 customElements.define("custom-chat", ChatMessage)
