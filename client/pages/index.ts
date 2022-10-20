@@ -68,7 +68,7 @@ export class Home extends HTMLElement {
             display:flex;
             flex-direction: column;
             align-items:center;
-            height:93vh;
+            height:90vh;
         }
         .input_el{
             width:288px;

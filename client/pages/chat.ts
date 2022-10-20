@@ -54,7 +54,7 @@ export class ChatMessage extends HTMLElement {
                   </div>
               <form class="form-container"
                 <div class="submit-message">
-                  <input class="input__c" placeholder="chatea" name="chat">
+                  <input class="input__c" placeholder="chatea" name="chat" type="text">
                   <button class="boton__c" ">Enviar</button>
                 </div>
                 </form>
@@ -72,7 +72,7 @@ export class ChatMessage extends HTMLElement {
             flex-direction: column;
             align-items:center;
            
-            height: 95vh;
+            height: 90vh;
             justify-content: space-around;
            width:350px;
            margin: 0 auto
@@ -144,6 +144,9 @@ export class ChatMessage extends HTMLElement {
             font-family:roboto;
             font-size:22px;
             margin:16px 0 0 0;
+        }
+        .form-container{
+            text-align:center;
         }
         `
         this.appendChild(style)
