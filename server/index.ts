@@ -167,10 +167,10 @@ app.get("/messages/:rtdbRoomId", function (req, res) {
     });
 });
 
-app.use(express.static("dist"))
+app.use(express.static("dist"));
 
 app.get("*", (req, res) => {
-    res.sendFile(__dirname + "../dist/index.html")
+    res.sendFile(__dirname, "../dist/index.html")
 })
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);
