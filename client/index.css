@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: linear-gradient(
+    81.17deg,
+    orange -15.65%,
+    rgba(65, 131, 176, 0.8) 63.73%
+  );
+}

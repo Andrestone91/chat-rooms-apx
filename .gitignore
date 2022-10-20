@@ -1,0 +1,8 @@
+.parcel-cache
+dist
+node_modules
+dev.ts
+fireStore.js
+index.js
+.env
+key.json
